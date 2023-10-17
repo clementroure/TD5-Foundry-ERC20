@@ -1,18 +1,23 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.21;
 
+import "forge-std/console.sol";
+
 import {Script} from "forge-std/Script.sol";
 import {StudentToken} from "../src/StudentToken.sol";
 
 contract DeploymentScript is Script {
+    function setUp() public {}
+
     function run() external {
-        uint256 deployerPrivateKey = vm.envUint("7ee3653524b95b713788b1118e70b12b653829a7d7");
-        vm.startBroadcast(deployerPrivateKey);
+        uint256 privateKey = vm.envUint("PRIVATE_KEY");
+        address account = vm.addr(privateKey);
 
-        // RewardToken rewardToken = new RewardToken();
-        // new Evaluator(rewardToken);
+        console.log("Account", account);
 
-        StudentToken studentToken = new StudentToken();
+        vm.startBroadcast(privateKey);
+
+        new StudentToken();
 
         vm.stopBroadcast();
     }
