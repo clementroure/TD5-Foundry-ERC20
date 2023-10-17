@@ -3,10 +3,6 @@ pragma solidity ^0.8.21;
 
 import "openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
-import "@uniswap/v3-periphery/contracts/interfaces/IUniswapV3Pool.sol";
-import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
-import "@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol";
-
 import {IStudentToken} from "./IstudentToken.sol";
 
 contract StudentToken is ERC20, IStudentToken {
