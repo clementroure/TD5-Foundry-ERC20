@@ -4,6 +4,7 @@ out = "out"
 libs = ["lib"]
 solc = "0.8.21"
 chain_id = 5
+# chain_id = 31337
 
 [etherscan]
 mainnet = { key = "${ETHERESCAN_KEY}" }
