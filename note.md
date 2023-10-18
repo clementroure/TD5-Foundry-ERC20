@@ -60,7 +60,6 @@ cast send --private-key $PRIVATE_KEY 0x5cd93e3B0afBF71C9C84A7574a5023B4998B97BE 
 
 EXERCICE 9
 
-cast send --private-key $PRIVATE_KEY 0x06DAA4776CB71f886De17dfF6474769970ca2ba7  "mint(uint256)" 1 --rpc-url $RPC_URL
 cast send --private-key $PRIVATE_KEY 0x06DAA4776CB71f886De17dfF6474769970ca2ba7  "mint(uint256)" 2 --rpc-url $RPC_URL
 
 cast send --private-key $PRIVATE_KEY 0x5cd93e3B0afBF71C9C84A7574a5023B4998B97BE  "ex9_burnNft()" --rpc-url $RPC_URL
